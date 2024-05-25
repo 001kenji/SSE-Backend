@@ -1,0 +1,24 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content=" 
+        default-src 'self';
+        script-src 'self' 'nonce-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9==';
+        style-src 'self' 'unsafe-inline';
+        connect-src 'self' http://127.0.0.1:8000 https://sse-backend-theta.vercel.app;
+        img-src * http://127.0.0.1:8000 https://sse-backend-theta.vercel.app   " />
+    <link rel="icon" type="image/svg+xml" href="{% static "trade-T_oQpDKU.jpeg" %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSE_Trade</title>
+    <script type="module" crossorigin src="{% static "index-DjsHOET5.js" %}"></script>
+    <link rel="stylesheet" crossorigin href="{% static "index-esiYx4Sw.css" %}">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
